@@ -108,8 +108,17 @@ services:
     volumes:
       - mongo_data:/data/db  # Persistência de dados (opcional)
 
-
-
+  mongo-bi:
+    image: juky/mongobi
+    restart: always
+    volumes:
+      #- "{{YourSchemaPath}}:/home/mongobi/schema.drdl" #Uncomment if you have an schema file
+      - "D:/airflow/mongosqld.conf:/home/mongobi/mongosqld.conf"
+      - "D:/logs:/logs"
+    container_name: "mongo-bi"
+    hostname: "mongo-bi"
+    ports:
+      - "3307:3307"
 
   redis:
     # Redis is limited to 7.2-bookworm due to licencing change
@@ -297,3 +306,4 @@ services:
 volumes:
   postgres-db-volume:
   mongo_data:  # Definição do volume
+  ssl_keys:
