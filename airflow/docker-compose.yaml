@@ -77,7 +77,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
-    - "C:\\Users\\maria\\Downloads\\Checkpoint5e6profTiago.csv:/data/Checkpoint5e6profTiago.csv"
+    - ${AIRFLOW_PROJ_DIR:-.}/Checkpoint5e6profTiago.csv:/data/Checkpoint5e6profTiago.csv
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -103,22 +103,13 @@ services:
     restart: always
   mongodb:
     image: mongo:latest
+    container_name: mongodb
     ports:
-      - "27018:27017"
+      - "2018:27017"
     volumes:
       - mongo_data:/data/db  # Persistência de dados (opcional)
 
-  mongo-bi:
-    image: juky/mongobi
-    restart: always
-    volumes:
-      #- "{{YourSchemaPath}}:/home/mongobi/schema.drdl" #Uncomment if you have an schema file
-      - "D:/airflow/mongosqld.conf:/home/mongobi/mongosqld.conf"
-      - "D:/logs:/logs"
-    container_name: "mongo-bi"
-    hostname: "mongo-bi"
-    ports:
-      - "3307:3307"
+
 
   redis:
     # Redis is limited to 7.2-bookworm due to licencing change
@@ -306,4 +297,4 @@ services:
 volumes:
   postgres-db-volume:
   mongo_data:  # Definição do volume
-  ssl_keys:
+
