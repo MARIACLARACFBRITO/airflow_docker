@@ -17,7 +17,8 @@ git clone https://github.com/MARIACLARACFBRITO/airflow_docker.git
 2. Navegar até o Diretório do Repositório
 Entre na pasta do repositório clonado:
 ```
-cd <nome_do_repositório>
+cd airflow_docker/airflow
+
 ```
 
   **Construir os containers do Docker:**
