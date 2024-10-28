@@ -11,35 +11,40 @@ Siga as etapas abaixo para garantir que tudo ocorra como o esperado:
 1. **Construir os containers do Docker:**
    ```bash
    docker-compose build
-Iniciar os containers em segundo plano:
+   
+**Iniciar os containers em segundo plano:**
 
 
-`docker-compose up -d`
+```docker-compose up -d
 
-Acessar a aplicação no navegador:
+**Acessar a aplicação no navegador:**
 
 URL: http://localhost:8080
+
 Login: airflow
+
 Senha: airflow
+
 Ativar a DAG e apertar o play para rodar.
 
-Acessar o MongoDB dentro do container:
+**Acessar o MongoDB dentro do container:**
 
 
-`docker exec -it <nome_do_container> mongosh`
 
-Selecionar o banco de dados:
+```docker exec -it <nome_do_container> mongosh
 
-`use banco_fiap`
-Mostrar as coleções disponíveis:
+**Selecionar o banco de dados:**
 
-`show collections`
+```use banco_fiap
 
-Consultar os dados na coleção info_cliente:
+**Mostrar as coleções disponíveis:**
 
-`db.info_cliente.find()`
+```show collections
 
-markdown
+**Consultar os dados na coleção info_cliente:**
+
+```db.info_cliente.find()
+
 
 
 ### Dicas:
