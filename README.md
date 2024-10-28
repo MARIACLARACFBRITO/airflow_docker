@@ -11,7 +11,7 @@ Siga as etapas abaixo para garantir que tudo ocorra como o esperado:
  1. **Construir os containers do Docker:**
    ```bash
    docker-compose build
-   
+   ```
 Iniciar os containers em segundo plano:
 
 ```
