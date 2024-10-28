@@ -1,1 +1,19 @@
-1.
+1.Etapas a serem seguidas para garantir que tudo ocorra como o esperado:
+
+1. docker-compose build
+
+2. docker-compose up –d
+
+3. acessar o localhost:8080 (login: airflow senha: airflow)
+
+4.ativar a dag e apertar o play para rodar
+
+5. docker exec –it <nome do container> mongosh
+
+6.use banco_fiap
+
+7.show collections
+
+8. db.info_cliente.find()
+
+9. serão exibidos os dados do arquivo csv carregados no mongo
