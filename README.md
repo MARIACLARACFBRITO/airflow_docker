@@ -10,25 +10,9 @@ Siga as etapas abaixo para garantir que tudo ocorra como o esperado:
 Abra seu terminal e execute o comando abaixo para clonar o repositório:
 
 ```bash
-git clone <URL_do_repositório>
+git clone https://github.com/MARIACLARACFBRITO/airflow_docker.git
 ```
 
-Claro! Aqui está um passo a passo completo para acessar e rodar o container do seu repositório no GitHub, incluindo a visualização dos arquivos no MongoDB:
-
-markdown
-Copiar código
-# Passo a Passo para Acessar e Rodar o Container
-
-Siga as etapas abaixo para clonar o repositório, construir e executar o container, e visualizar os dados no MongoDB.
-
-## 1. Clonar o Repositório
-
-Abra seu terminal e execute o comando abaixo para clonar o repositório:
-
-```bash
-git clone <URL_do_repositório>
-```
-Substitua <URL_do_repositório> pela URL do seu repositório no GitHub.
 
 2. Navegar até o Diretório do Repositório
 Entre na pasta do repositório clonado:
