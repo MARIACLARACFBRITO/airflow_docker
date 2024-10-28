@@ -1,9 +1,6 @@
 # airflow_docker
 
-Vamos ajustar para que todos os comandos fiquem formatados corretamente. Aqui está a versão revisada:
 
-markdown
-Copiar código
 # Instruções para Configuração
 
 Siga as etapas abaixo para garantir que tudo ocorra como o esperado:
