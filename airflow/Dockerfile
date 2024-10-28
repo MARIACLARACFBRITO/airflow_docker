@@ -4,6 +4,5 @@ FROM apache/airflow:2.10.1-python3.12
 # Instalar as bibliotecas necessárias (Pandas, Pendulum e Pymongo)
 RUN pip install pymongo pandas pendulum
 
-# Se você tiver um requirements.txt com outras dependências, você pode adicionar assim:
-# COPY requirements.txt /requirements.txt
-# RUN pip install -r /requirements.txt
+
+
