@@ -1,5 +1,7 @@
 # airflow_docker
 
+Vamos ajustar para que todos os comandos fiquem formatados corretamente. Aqui está a versão revisada:
+
 markdown
 Copiar código
 # Instruções para Configuração
@@ -11,9 +13,9 @@ Siga as etapas abaixo para garantir que tudo ocorra como o esperado:
    docker-compose build
 Iniciar os containers em segundo plano:
 
-'''bash
+bash
+Copiar código
 docker-compose up -d
-
 Acessar a aplicação no navegador:
 
 URL: http://localhost:8080
@@ -23,26 +25,24 @@ Ativar a DAG e apertar o play para rodar.
 
 Acessar o MongoDB dentro do container:
 
-'''bash
+bash
+Copiar código
 docker exec -it <nome_do_container> mongosh
-
 Selecionar o banco de dados:
 
-'''bash
+bash
+Copiar código
 use banco_fiap
-
 Mostrar as coleções disponíveis:
 
-'''bash
+bash
+Copiar código
 show collections
-
 Consultar os dados na coleção info_cliente:
 
-'''bash
+bash
+Copiar código
 db.info_cliente.find()
-
-Os dados do arquivo CSV carregados no Mongo serão exibidos.
-
 markdown
 
 
