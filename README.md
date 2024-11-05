@@ -1,36 +1,33 @@
 # airflow_docker
 
+Setup Instructions
+Follow the steps below to ensure everything works as expected:
 
-# Instruções para Configuração
-
-Siga as etapas abaixo para garantir que tudo ocorra como o esperado:
-
-## 1. Clonar o Repositório
-
-Abra seu terminal e execute o comando abaixo para clonar o repositório:
+# 1. Clone the Repository
+Open your terminal and run the command below to clone the repository:
 
 ```bash
 git clone https://github.com/MARIACLARACFBRITO/airflow_docker.git
 ```
 
 
-2. Navegar até o Diretório do Repositório
-Entre na pasta do repositório clonado:
+# 2. Navigate to the Repository Directory
+Enter the folder of the cloned repository:
 ```
 cd airflow_docker/airflow
 
 ```
 
-  **Construir os containers do Docker:**
+**Build the Docker containers:**
    ```bash
    docker-compose build
    ```
-Iniciar os containers em segundo plano:
+Start the containers in the background:
 
 ```
 docker-compose up -d
 ```
-Acessar a aplicação no navegador:
+Access the application in the browser:
 
 URL: http://localhost:8080
 
@@ -38,34 +35,34 @@ Login: airflow
 
 Senha: airflow
 
-Ativar a DAG e apertar o play para rodar.
+Activate the DAG and click play to run it.
 
-Acessar o MongoDB dentro do container:
+Access MongoDB inside the container:
 ```
 docker exec -it <nome_do_container> mongosh
 ```
 
-Selecionar o banco de dados:
+Select the database:
 
 ```
 use banco_fiap
 ```
 
-Mostrar as coleções disponíveis:
+Show the available collections:
 
 ```
 show collections
 ```
 
-Consultar os dados na coleção info_cliente:
+Query the data in the info_cliente collection:
 
 ```
 db.info_cliente.find()
 ```
 
 
-### Dicas:
-- Substitua `<nome_do_container>` pelo nome real do seu container.
-- Certifique-se de que o `docker-compose` esteja instalado e configurado corretamente antes de executar os comandos.
+### Tips:
+Replace <container_name> with the actual name of your container.
+Make sure that docker-compose is installed and configured correctly before running the commands.
 
 
