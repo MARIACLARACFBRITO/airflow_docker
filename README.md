@@ -19,6 +19,9 @@ cd airflow_docker/airflow
 ```
 
 **Build the Docker containers:**
+
+*IMPORTANT:* Before using docker commands certify docker desktop is open on device.
+
    ```bash
    docker-compose build
    ```
